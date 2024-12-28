@@ -1,0 +1,400 @@
+<html>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natasya's Space</title>
+    <body>
+		<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8bcd6;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .hero {
+            background-color: #f8bcd6;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+		
+	<!-------Gambar-------->		
+		* {box-sizing: border-box}
+		body {font-family: Verdana, sans-serif; margin:0}
+		.mySlides {display: none}
+		img {vertical-align: middle;}
+
+		/* Slideshow container */
+		.slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prev, .next {
+		cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .prev, .next,.text {font-size: 11px}
+		}
+
+    </style>
+
+<body>
+        <p style="font-family: Arial, sans-serif">
+            <table border="0" align="center" width="1255" style="border-collapse:collapse;">
+                <tr align="center" width="1275" height="30" bgcolor="e38cca" style="font-family:'Comic Sans MS', sans-serif; font-size: 15px">
+					<td id="Top"><a href="index.html" style="color: white; text-decoration: none;"><b>Home</b></a></td>
+                    <td><a href="#WhatILike"  style="color: white; text-decoration: none;"><b>What I Like</b></a></td>
+					<td><a href="#about" style="color: white; text-decoration: none;"><b>About Me</b></a></td>
+                    <td><a href="#location" style="color: white; text-decoration: none;"><b>Location</b></a></td>
+                    <td><a href="#contact" style="color: white; text-decoration: none;"><b>Contact Me</b></a></td>
+                </tr>
+				
+                <tr align="center" width="1275" height="100" bgcolor="b33f92">
+                    <td colspan="5" style="color: white; font-size: 30px; font-family:papyrus"><b><marquee>❀❤ Welcome To My Safe Space! ❤❀
+					      ❁ My name is <b>Natasya Amira!</b> and am <b>so happy</b> to see you! ❁</marquee></td>
+                </tr>
+		
+						
+		<!-----------Gambar slide---------->
+		<tr>
+		  <td colspan="5" bgcolor="b33f92">
+			<div class="slideshow-container" style="max-width: 500px; margin: auto; position: relative;">
+
+			  <div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<a href="slide1.jpg" target="_blank">
+				  <img src="slide1.jpg" style="width:100%; border: 5px solid #ff99cc; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+				</a>
+				<div class="text" style="text-align: center; font-family: Arial, sans-serif; font-size: 16px; color: #ffffff;">My Campus</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<a href="slide2.jpg" target="_blank">
+				  <img src="slide2.jpg" style="width:100%; border: 5px solid #ff99cc; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+				</a>
+				<div class="text" style="text-align: center; font-family: Arial, sans-serif; font-size: 16px; color: #ffffff;">My Family</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<a href="slide3.jpg" target="_blank">
+				  <img src="slide3.jpg" style="width:100%; border: 5px solid #ff99cc; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+				</a>
+				<div class="text" style="text-align: center; font-family: Arial, sans-serif; font-size: 16px; color: #ffffff;">My Bestie</div>
+			  </div>
+
+			  <a class="prev" onclick="plusSlides(-1)" style="position: absolute; top: 50%; left: 0; color: #fff; font-size: 18px; padding: 8px; cursor: pointer;">❮</a>
+			  <a class="next" onclick="plusSlides(1)" style="position: absolute; top: 50%; right: 0; color: #fff; font-size: 18px; padding: 8px; cursor: pointer;">❯</a>
+
+			</div>
+			<br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)" style="cursor: pointer; height: 10px; width: 10px; margin: 5px; background-color: #bbb; border-radius: 50%; display: inline-block;"></span> 
+      <span class="dot" onclick="currentSlide(2)" style="cursor: pointer; height: 10px; width: 10px; margin: 5px; background-color: #bbb; border-radius: 50%; display: inline-block;"></span> 
+      <span class="dot" onclick="currentSlide(3)" style="cursor: pointer; height: 10px; width: 10px; margin: 5px; background-color: #bbb; border-radius: 50%; display: inline-block;"></span> 
+    </div>
+  </td>
+</tr>
+
+		
+		<tr align="center" width="1275" height="300">
+			<td colspan="5" bgcolor="#d687b2" style="color: #ffffff; font-size: 20px; font-family: papyrus; text-shadow: 2px 2px 6px #c26ba7; padding: 20px;">
+			<div style="display: flex; align-items: center; justify-content: center; gap: 30px;">
+				<!-- Image on the Left -->
+				<div>
+					<img src="gambartasya.jpg" alt="This is Me!" style="width: 220px; height: auto; border-radius: 50%; border: 5px solid white; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);">
+				</div>
+            <!-- Text on the Right -->
+				<div style="text-align: left; max-width: 600px;">
+					<h2 style="color: #ffebf5; text-shadow: 2px 2px 4px #ad4c85;">HI! ♡</h2>
+					<h2 style="color: #ffebf5; text-shadow: 2px 2px 4px #ad4c85;">What Do You Need to Know About Me? ♡</h2>
+					<p style="color: #fffbe6; font-size: 18px; line-height: 1.6;">
+                    I'm a <b>full-time student at UiTM Campus Rembau</b> and am currently finishing my last semester!
+					</p>
+                <!-- Instagram Link -->
+					<p style="margin: 15px 0;">
+					<a href="report.pdf" target="_blank" style="color: #ffcc33; text-decoration: none; font-weight: bold; font-size: 18px;">🌸 Check out one of my work!</a>
+					</p>
+					<p style="color: #fffbe6; font-size: 16px; margin: 10px 0;">This is Me! 💕</p>
+					<p style="color: #fffbe6; font-size: 16px;">For more information about me, either click the <b>Navigation Menu</b> or <b>scroll down further!</b></p>
+					<h3 style="color: #ffd1ec; font-family: 'Comic Sans MS', cursive; margin-top: 20px;">See you soon! ✨</h3>
+				</div>
+			</div>
+		</td>
+	</tr>
+
+               <tr align="center" width="1275" height="300">
+				<td colspan="5" id="WhatILike" bgcolor="#f5f4d8">
+				<h2 style="font-family:papyrus">My Favourites In Life Right Now</h2>
+				<p style="font-family:papyrus; font-size: 20px"><b>Tips! Click on the little pictures to hear my thoughts 🤫 </b></p>
+					<table border="1" align="center" width="800">
+					<tr bgcolor="lightpink" align="center" style="font-family:papyrus">
+						<td>
+							<b>Road Trip</b>
+						<br>
+						<a href="gallery/road.m4a"><img src="roadtrip.png" alt="Road Trip" style="width: 80px; height: auto; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);"></a>
+					</td>
+					<td>
+						<b>Chocolates</b>
+                    <br>
+						<a href="gallery/Chocolate.m4a"><img src="coklat.png" alt="Chocolates" style="width: 80px; height: auto; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);"></a>
+					</td>
+					<td>
+						<b>Make Up</b>
+                    <br>
+						<a href="gallery/Makeup.m4a"><img src="makeup.png" alt="Make Up" style="width: 80px; height: auto; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);"></a>
+					</td>
+				</tr>
+					<tr align="center" bgcolor="#f1d0f1" style="font-family: 'Kristin ITC';">
+					<td>It does not have to cost much to have fun, Just gas money!😆</td>
+					<td>Why go on an extreme diet when you can have sweets and chocolate at free will!😋</td>
+					<td>Sometimes experimenting with makeups is a ton of fun!🥰</td>
+				</tr>
+        </table>
+    </td>
+</tr>
+
+			<!-- Jump Up Link -->
+	<tr>
+		<td colspan="5" align="right" width="1275" height="50" bgcolor="#fff6e8" style="font-size: 14px; font-family: 'Comic Sans MS'; text-shadow: 1px 1px 3px #ffe6ea; padding: 10px;">
+        <a href="#Top" style="color: #f08ca1; text-decoration: none; font-weight: bold;">🔝 Jump Up</a>
+		</td>
+	</tr>
+			
+			
+               <!-- About Me Section -->
+				<tr align="center" width="1275" height="200" bgcolor="#f5f4d8" style="font-size:15px; font-family:'Bradley Hand ITC'; text-shadow: 3px 3px 6px white;">
+				<td colspan="5" id="about">
+				<h2>About Me</h2>
+				<p><b>Welcome To My Small Space!</b></p>
+				<p><b>This is where you would get to know me better:</b></p>
+			</td>
+		</tr>
+			<tr align="center" width="1275" height="200" bgcolor="#f5f4d8" style="font-size:13px; font-family:'Bradley Hand ITC'; text-shadow: 3px 3px 6px white;">
+		<td>
+		<img src="whatilike/tasyabiru.jpg" alt="Natasya" style="width: 150px; height: 150px; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);">
+			<p><b>My name is Natasya Amira binti Amiruldin,</b></p>
+		</td>
+		<td>
+			<img src="whatilike/tasyacoklat.jpg" alt="Sweet Treats" style="width: 150px; height: 150px; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);">
+			<p><b>I love love love going out and have a sweet treat at the end of the day!</b></p>
+		</td>
+		<td>
+			<img src="whatilike/kereta.jpg" alt="Road Trips" style="width: 150px; height: 150px; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);">
+			<p><b>I would choose to go out, see, and enjoy the view throughout the ride.</b></p>
+		</td>
+		<td>
+			<img src="whatilike/grad.jpg" alt="Loved Ones" style="width: 150px; height: 150px; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);">
+			<p><b>But honestly, I could not have made it this far without my loved ones.</b></p>
+		</td>
+		<td>
+			<img src="whatilike/tasyafood.jpg" alt="Food Hunting" style="width: 150px; height: 150px; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);">
+			<p><b>Most days, food hunting just feels like comfort.</b></p>
+		</td>
+		
+			<tr align="center" width="1275" height="60" bgcolor="f5f4d8" style="font-size:15; font-family:Bradley Hand ITC; text-shadow: 3px 3px 6px white">
+			<td colspan="5"><a href="seemore.html"><b>Click Here To See More</b></a></td>
+			</tr>
+
+            <!-- Location Section -->
+			<tr align="center" width="1275" height="200" bgcolor="#fff6e8" style="font-family: 'Comic Sans MS'; color: #4a4a4a;">
+			<td colspan="5" id="location" style="padding: 20px;">
+			<h3 style="color: #f08ca1; text-shadow: 2px 2px 4px #ffc4ce;">Where Can You Find Me?</h3>
+			<p style="margin: 10px 0;">
+            <a href="https://www.google.com/maps/dir/2.6687696,101.9918785/11,+Jalan+6,+Taman+Batu+Caves,+68100+Batu+Caves,+Selangor/@2.9541114,101.5008691,89213m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x31cc470e88d19cd9:0x1b91d1fdf6049737!2m2!1d101.677711!2d3.2375249?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #ff8a80; text-decoration: none; font-weight: bold;">🏡 Home: Jalan 6, Taman Batu Caves</a>
+			</p>
+			<p style="margin: 10px 0;">
+            <a href="https://www.google.com/maps/dir//Universiti+Teknologi+MARA,+UiTM+Cawangan+Negeri+Sembilan+Kampus,+Jalan,+Kampung+Pilin,+71300+Rembau,+Negeri+Sembilan/@2.510904,101.9805481,22311m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x31cdfd8ea33825ad:0x5aa3255f8a169f1c!2m2!1d102.0629501!2d2.5109066?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #ff8a80; text-decoration: none; font-weight: bold;">🎓 Campus: UiTM Rembau, Negeri Sembilan</a>
+			</p>
+		</td>
+	</tr>
+
+	<!-- Contact Me Section -->
+		<tr align="center" width="1275" height="200" bgcolor="#fff6e8" style="font-family: 'Comic Sans MS'; color: #4a4a4a;">
+		<td colspan="5" id="contact" style="padding: 20px;">
+        <h3 style="color: #f08ca1; text-shadow: 2px 2px 4px #ffc4ce;">Contact Me</h3>
+        <p>Email: <a href="mailto:tasyamira123@gmail.com" style="color: #ff8a80; text-decoration: none; font-weight: bold;">📧 tasyamira123@gmail.com</a></p>
+        <p style="margin: 10px 0;">or</p>
+        <p>Phone: <span style="color: #ff8a80; font-weight: bold;">📞 +60112 0598334</span></p>
+		</td>
+	</tr>
+
+<!-- Jump Up Link -->
+	<tr>
+		<td colspan="5" align="right" width="1275" height="50" bgcolor="#fff6e8" style="font-size: 14px; font-family: 'Comic Sans MS'; text-shadow: 1px 1px 3px #ffe6ea; padding: 10px;">
+        <a href="#Top" style="color: #f08ca1; text-decoration: none; font-weight: bold;">🔝 Jump Up</a>
+		</td>
+	</tr>
+
+		<!-- Footer -->
+		<tr align="center" width="1275" height="50" style="background-color: fdd1f2; color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px;">
+			<td colspan="5">
+				❤️ Made by Passion, Remember To Stay Sweet and Cute! ❤️
+			</td>
+		</tr>
+
+            </table>
+        </p>
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {
+					slideIndex = 1;
+				}    
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";  
+				dots[slideIndex - 1].className += " active";
+			}
+
+			// Smooth scrolling for anchor links
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth'
+					});
+				});
+			});
+	</script>
+
+    </body>
+</html>

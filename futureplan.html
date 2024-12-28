@@ -1,0 +1,207 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natasya's Safe Space</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fef6f9;
+        }
+
+        header {
+            background-color: #f8bcd6;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        nav {
+            background-color: #b33f92;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #e38cca;
+            border-radius: 5px;
+        }
+
+        marquee {
+            font-size: 18px;
+            color: white;
+        }
+
+        .section-title {
+            background-color: #f8bcd6;
+            padding: 10px 0;
+            color: #333;
+            font-family: 'Papyrus', sans-serif;
+            font-size: 20px;
+        }
+
+        .futureplan-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .futureplan-section h2 {
+            font-size: 26px;
+            color: #b33f92;
+            margin-bottom: 20px;
+        }
+
+        .futureplan-card {
+            background-color: #f5f4d8;
+            border: 2px solid #b33f92;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .futureplan-card img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            margin: 15px 0;
+        }
+
+        .futureplan-card p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer a {
+            color: #f8bcd6;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #e38cca;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>❀ Natasya's Safe Space ❀</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="socmed.html">Social Media</a>
+        <a href="https://www.google.com/maps/dir//Universiti+Teknologi+MARA,+UiTM+Cawangan+Negeri+Sembilan+Kampus,+Jalan,+Kampung+Pilin,+71300+Rembau,+Negeri+Sembilan/@2.510904,101.9805481,22311m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x31cdfd8ea33825ad:0x5aa3255f8a169f1c!2m2!1d102.0629501!2d2.5109066?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: white; text-decoration: none; font-weight: bold;">Location</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="video.html">Video</a>
+		<a href="favs.html">Favourites</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <div class="section-title">
+        <marquee>❀❤ Welcome To My Safe Space! ❤❀ ❁ My name is <b>Natasya Amira</b>, and I'm <b>so happy</b> to see you! ❁</marquee>
+    </div>
+
+    <!-- Future Section -->
+    <div class="futureplan-section">
+        <h2>The Planning Towards My Future</h2>
+        <p><a href="seemore.html">Back</a></p>
+        
+        <div class="futureplan-card">
+            <h3>First Target - Web Designer</h3>
+            <p>A web designer is responsible for creating the design and layout of a website or web pages.</p>
+            <div>
+                <img src="webdesign.jpg" alt="webdesign">
+                <p><a href="https://www.youtube.com/watch?v=gs5333LTCx4">Web Designer</a> - Through my 5 semesters in Diploma in Information Management, the most interesting subject that I've really grown fond of is the coding classes. Becoming a Web Designer is one of the choices that I have in mind for now.</p>
+            </div>
+        </div>
+
+        <div class="futureplan-card">
+            <h3>Second Target - Content Management</h3>
+            <p>A content manager is a professional who oversees the creation, management, and optimization of content for a company.</p>
+            <div>
+                <img src="content.png" alt="content">
+                <p><a href="https://www.youtube.com/watch?v=deqX0gMeUVc">Content Manager</a> - After some deep research, I discovered that there is one more career opportunity in my course that is intriguing. I find that being a content manager is a fun and stress-free career with an amazing environment.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>❤️ Made by Passion, Remember To Stay Sweet and Cute! ❤️</p>
+        <p><a href="#Top">Back to Top</a></p>
+    </div>
+
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {
+					slideIndex = 1;
+				}    
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";  
+				dots[slideIndex - 1].className += " active";
+			}
+
+			// Smooth scrolling for anchor links
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth'
+					});
+				});
+			});
+	</script>
+
+</body>
+</html>

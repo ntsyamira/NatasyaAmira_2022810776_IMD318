@@ -1,0 +1,205 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natasya's Safe Space</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fef6f9;
+        }
+
+        header {
+            background-color: #f8bcd6;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #b33f92;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #e38cca;
+            border-radius: 5px;
+        }
+
+        marquee {
+            font-size: 18px;
+            color: white;
+        }
+
+        .section-title {
+            background-color: #f8bcd6;
+            padding: 10px 0;
+            color: #333;
+            font-family: 'Papyrus', sans-serif;
+            font-size: 20px;
+        }
+
+        .academic-section {
+            padding: 20px;
+            background-color: #f5f4d8;
+        }
+
+        .academic-card {
+            background-color: #f5d2fc;
+            border: 2px solid #b33f92;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 15px auto;
+            width: 80%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .academic-card:nth-child(2) {
+            background-color: #edbbf7;
+        }
+
+        .academic-card:nth-child(3) {
+            background-color: #e199ef;
+        }
+
+        .academic-card h3 {
+            font-size: 22px;
+            color: #b33f92;
+        }
+
+        .academic-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #f8bcd6;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #e38cca;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>❀ Natasya's Safe Space ❀</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="socmed.html">Social Media</a>
+        <a href="https://www.google.com/maps/dir//Universiti+Teknologi+MARA,+UiTM+Cawangan+Negeri+Sembilan+Kampus,+Jalan,+Kampung+Pilin,+71300+Rembau,+Negeri+Sembilan/@2.510904,101.9805481,22311m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x31cdfd8ea33825ad:0x5aa3255f8a169f1c!2m2!1d102.0629501!2d2.5109066?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: white; text-decoration: none; font-weight: bold;">Location</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="video.html">Video</a>
+		<a href="favs.html">Favourites</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <div class="section-title">
+        <marquee>❀❤ Welcome To My Safe Space! ❤❀ ❁ My name is <b>Natasya Amira</b>, and I'm <b>so happy</b> to see you! ❁</marquee>
+    </div>
+
+    <!-- Academic Section -->
+    <div class="academic-section">
+        <div class="section-title">
+            <h2 align="center">My Academic History</h2>
+			<p align="center"><a href="seemore.html">Back</a></p>
+        </div>
+
+        <div class="academic-card">
+            <h3>2010 - 2015: Primary School</h3>
+            <p><b>School:</b> SK (2) Taman Selayang</p>
+            <p><b>Achievements:</b> Completed UPSR with 4A's and 1B</p>
+            <p><b>Years:</b> Year 1 to Year 6</p>
+        </div>
+
+        <div class="academic-card">
+            <h3>2016 - 2020: High School</h3>
+            <p><b>School:</b> SMK Taman Selayang</p>
+            <p><b>Stream:</b> Science Stream</p>
+            <p><b>Achievements:</b> Completed SPM with 5A's and 4B's</p>
+        </div>
+
+        <div class="academic-card">
+            <h3>2022 - 2025: Diploma</h3>
+            <p><b>University:</b> UiTM Campus Rembau</p>
+            <p><b>Program:</b> Diploma in Information Management</p>
+            <p><b>Current Status:</b> Ongoing Semester 5</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>❤️ Made by Passion, Remember To Stay Sweet and Cute! ❤️</p>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {
+					slideIndex = 1;
+				}    
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";  
+				dots[slideIndex - 1].className += " active";
+			}
+
+			// Smooth scrolling for anchor links
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth'
+					});
+				});
+			});
+	</script>
+
+</body>
+</html>

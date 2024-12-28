@@ -1,0 +1,235 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        /* Gallery Style */
+        .gallery {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            font-size: 28px;
+            color: #b33f92;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .gallery-item img:hover {
+            opacity: 0.8;
+        }
+
+        /* Modal Style */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 80%;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #f8bcd6;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Gallery Section -->
+<div class="gallery">
+    <h2>My Gallery with <b>Memories</b></h2>
+    <p style="color:#b33f92; font-family: papyrus"><b>The memories that will forever be at heart ♡♡♡ </b></p>
+
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <a href="#" onclick="showStory('The time where we were stressed over piled up assignments 🫨')">
+                <img src="gallery/1.jpg" alt="Memory 1">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#" onclick="showStory('Drinks during food festival!!')">
+                <img src="gallery/2.jpg" alt="Memory 2">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#" onclick="showStory('Feeling pretty 😋')">
+                <img src="gallery/3.jpg" alt="Memory 3">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#" onclick="showStory('Having desserts as I was feeling under the weather 🥲')">
+                <img src="gallery/4.jpg" alt="Memory 4">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#" onclick="showStory('Ramen date! 🍜')">
+                <img src="gallery/5.jpg" alt="Memory 5">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#" onclick="showStory('Beautiful memory seeing my parents on a wedding ❤')">
+                <img src="gallery/6.jpg" alt="Memory 6">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#" onclick="showStory('Classmates in Diploma')">
+                <img src="gallery/7.jpg" alt="Memory 7">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#" onclick="showStory('An unexpected outing with my girly ❤')">
+                <img src="gallery/8.jpg" alt="Memory 8">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#" onclick="showStory('Mirror selfie because why not.')">
+                <img src="gallery/9.jpg" alt="Memory 9">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="#" onclick="showStory('Stuffed after buffet but ootd is a must.')">
+                <img src="gallery/10.jpg" alt="Memory 10">
+            </a>
+        </div>
+		<div class="gallery-item">
+            <a href="#" onclick="showStory('Sister's big day!')">
+                <img src="gallery/gradd.jpeg" alt="Memory 11">
+            </a>
+        </div>
+		<div class="gallery-item">
+            <a href="#" onclick="showStory('Beauty sunset ❂')">
+                <img src="gallery/sun.jpeg" alt="Memory 12">
+            </a>
+        </div>
+		<div class="gallery-item">
+            <a href="#" onclick="showStory('Birthday celebration!! 💕')">
+                <img src="gallery/bday.jpeg" alt="Memory 13">
+            </a>
+        </div>
+				<div class="gallery-item">
+            <a href="#" onclick="showStory('A girls day out to Seremban with my girls ♡♡♡')">
+                <img src="gallery/gdo.jpg" alt="Memory 14">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Add CSS for uniform image sizes -->
+<style>
+.gallery {
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+#storyPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #b33f92;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#storyPopup button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #b33f92;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#storyPopup button:hover {
+    background-color: #a1287a;
+}
+</style>
+
+<!-- Story Popup -->
+<div id="storyPopup">
+    <p id="storyText"></p>
+    <button onclick="closeStory()">Close</button>
+</div>
+
+<!-- JavaScript for Story Popup -->
+<script>
+function showStory(story) {
+    document.getElementById('storyText').textContent = story;
+    document.getElementById('storyPopup').style.display = 'block';
+}
+
+function closeStory() {
+    document.getElementById('storyPopup').style.display = 'none';
+}
+</script>
+
+	<div>
+		<p><a href="seemore.html">Back</a></p>
+	</div>
+
+		<!-- JavaScript File Link -->
+			<script src="gallery-js.js">JAVA</script>
+	</body>
+</html>
